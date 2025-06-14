@@ -1,0 +1,122 @@
+@import '../_variables.scss';
+
+.offering {
+  background-color: var(--color-dark-bg);
+  color: var(--color-white);
+  font-family: 'ABChanel Corpo', sans-serif;
+  padding: 100px 0 100px 0;
+  overflow-x: hidden;
+  &__box{
+    display: flex;
+    flex-direction: column;
+  }
+  &__services{
+    margin-top: 70px;
+  }
+  &__events-title,
+  &__services-title{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+  }
+  &__events-subtitle,
+  &__services-subtitle{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 200;
+    line-height: 140%;
+    font-family: 'TT Commons', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__events-list,
+  &__services-list{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px 20px;
+      li {
+        flex: 1 1 30%;
+        font-size: 18px;
+        font-family: 'TT Commons', sans-serif;
+        text-transform: uppercase;
+      }
+  }
+}
+
+@media (min-width: 768px) {
+    .offering {
+      padding: 120px 0;
+
+      &__events-title,
+      &__services-title {
+        font-size: 38px;
+      }
+
+      &__events-subtitle,
+      &__services-subtitle {
+        font-size: 19px;
+        margin-top: 22px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &__events-list,
+      &__services-list {
+        gap: 15px 40px;
+
+        li {
+          flex: 1 1 calc(33.333% - 27px);
+          font-size: 19px;
+        }
+      }
+    }
+  }
+
+@media (min-width: 1224px) {
+  .offering {
+    padding: 140px 0 145px 0;
+    &__box {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__services {
+      margin-top: 0;
+    }
+
+    &__events-title,
+    &__services-title {
+      font-size: 55px;
+      text-align: start;
+    }
+
+    &__events-subtitle,
+    &__services-subtitle {
+      text-align: start;
+      line-height: 160%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__events-list,
+    &__services-list {
+      padding: 0;
+      margin: 0 auto;
+      gap: 15px 100px;
+
+      li {
+        flex: 1 1 30%;
+        font-size: 20px;
+      }
+    }
+  }
+}
+

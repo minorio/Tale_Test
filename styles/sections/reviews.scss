@@ -1,0 +1,227 @@
+@import '../_variables.scss';
+
+.reviews {
+  padding: 100px 0;
+  font-family: var(--font-main);
+
+  &__title {
+    font-family: 'ABChanel Corpo', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__slide {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__nav {
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    display: none;
+  }
+
+  &__arrow {
+    background: none;
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 30px;
+    padding: 20px 16px;
+    cursor: pointer;
+    transition: all ease-out 0.12s;
+
+    &:first-of-type {
+      rotate: 180deg;
+    }
+    svg {
+      path {
+        fill: var(--color-dark-grey);
+      }
+    }
+    &:hover {
+      background: var(--color-cursor-hover);
+      border: 1px solid var(--color-black);
+      svg {
+        path {
+          fill: var(--color-black);
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    display: none;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: background 0.12s;
+
+    &.is-active {
+      background: #333;
+    }
+  }
+
+  &__button {
+    font-family: 'ABChanel Corpo', sans-serif;
+    margin: 40px auto 0;
+    display: block;
+    color: var(--color-black);
+    padding: 1px;
+    font-weight: 300;
+    border: 1px solid var(--color-white);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    background: linear-gradient(140deg, var(--color-black), var(--color-white), var(--color-black));
+    &-module {
+      background: var(--color-white);
+      padding: 13px 40px;
+      border-radius: 20px;
+      img {
+        padding-left: 10px;
+      }
+    }
+    &:hover {
+      background: var(--color-cursor-hover);
+      .reviews__button-module {
+        background: var(--color-cursor-hover);
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 1224px) {
+    padding: 140px 0;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      font-size: 55px;
+      margin-bottom: 0;
+      text-align: left;
+      max-width: 663px;
+    }
+
+    &__nav {
+      display: flex;
+      gap: 10px;
+      margin-top: 0;
+    }
+    &__slider-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+    }
+
+    &__slide {
+      flex-direction: row;
+      gap: 280px;
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__image {
+      max-width: 560px;
+      height: 310px;
+      margin: 0;
+    }
+
+    &__content {
+      margin-top: 0;
+      max-width: 800px;
+      text-align: left;
+    }
+
+    &__subtitle {
+      font-size: 32px;
+    }
+
+    &__author {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 64px;
+    }
+
+    &__pagination {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__button {
+      margin: 0;
+      align-self: flex-end;
+    }
+  }
+}

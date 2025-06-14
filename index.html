@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tale Test</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+</head>
+<body>
+<section class="reviews">
+    <div class="container">
+        <div class="reviews__header">
+            <h2 class="reviews__title">Отзывы наших клиентов</h2>
+            <div class="reviews__nav">
+                <button class="reviews__arrow" id="prev">
+                    <svg width="10" height="10" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4333 4.35355C12.6286 4.15829 12.6286 3.84171 12.4333 3.64645L9.25132 0.464466C9.05606 0.269204 8.73948 0.269204 8.54421 0.464466C8.34895 0.659728 8.34895 0.976311 8.54421 1.17157L11.3726 4L8.54421 6.82843C8.34895 7.02369 8.34895 7.34027 8.54421 7.53553C8.73948 7.7308 9.05606 7.7308 9.25132 7.53553L12.4333 4.35355ZM0.0693359 4V4.5H12.0797V4V3.5H0.0693359V4Z" fill="black"/>
+                    </svg>
+                </button>
+                <button class="reviews__arrow" id="next">
+                    <svg width="10" height="10" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.4333 4.35355C12.6286 4.15829 12.6286 3.84171 12.4333 3.64645L9.25132 0.464466C9.05606 0.269204 8.73948 0.269204 8.54421 0.464466C8.34895 0.659728 8.34895 0.976311 8.54421 1.17157L11.3726 4L8.54421 6.82843C8.34895 7.02369 8.34895 7.34027 8.54421 7.53553C8.73948 7.7308 9.05606 7.7308 9.25132 7.53553L12.4333 4.35355ZM0.0693359 4V4.5H12.0797V4V3.5H0.0693359V4Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="reviews__slider-wrapper">
+            <div class="reviews__slider">
+                <div class="reviews__slides-container"> <div class="reviews__slide is-active">
+                    <img src="images/review-slide-1.webp" alt="Свадебное фото" class="reviews__image" />
+                    <div class="reviews__content">
+                        <h3 class="reviews__subtitle">Свадьба на берегу моря</h3>
+                        <p class="reviews__author">Светлана и Сергей</p>
+                        <p class="reviews__text">
+                            Мы немножко отошли от отдыха и хотели бы ещё раз поблагодарить вас за всё! Свадьба была невероятная, просто голливудский фильм! Передайте, пожалуйста, нашу искреннюю благодарность всей команде. Свет, декорации и вся организация праздника были на высшем уровне!
+                        </p>
+                    </div>
+                </div>
+
+                    <div class="reviews__slide">
+                        <img src="images/review-slide-2.webp" alt="Фото День Рождения" class="reviews__image" loading="lazy"/>
+                        <div class="reviews__content">
+                            <h3 class="reviews__subtitle">День Рождение</h3>
+                            <p class="reviews__author">Вася</p>
+                            <p class="reviews__text">
+                                Мы в полном восторге от организации нашего дня рождения! Это был настоящий праздник, продуманный до мелочей, словно идеальный сценарий. Хотим выразить огромную благодарность всей команде за их профессионализм и внимание к каждой детали. Еда, атмосфера и музыка были на высоте, все гости остались под впечатлением!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <img src="images/review-slide-3.webp" alt="Фото Корпоратива" class="reviews__image" loading="lazy"/>
+                        <div class="reviews__content">
+                            <h3 class="reviews__subtitle">Корпоратив</h3>
+                            <p class="reviews__author">Директор Аросаки</p>
+                            <p class="reviews__text">
+                                Мы хотели бы выразить огромную благодарность за организацию нашего корпоративного мероприятия! Это был по-настоящему незабываемый вечер, полный ярких моментов и позитивных эмоций. Все коллеги остались в восторге от программы, угощений и общей атмосферы праздника. Ваша команда проделала потрясающую работу, учтя все наши пожелания!
+                            </p>
+                        </div>
+                    </div>
+                </div> </div> <div class="reviews__pagination">
+            <span class="reviews__dot is-active"></span>
+            <span class="reviews__dot"></span>
+            <span class="reviews__dot"></span>
+        </div>
+            <button class="reviews__button"><div class="reviews__button-module">Все отзывы<img src="images/arrow.webp" alt="arrow" loading="lazy"></div></button>
+        </div> </div> </section>
+    <section class="offering">
+        <div class="container">
+            <div class="offering__box">
+                <div class="offering__events">
+                    <h2 class="offering__events-title">Персонал на мероприятии</h2>
+                    <p class="offering__events-subtitle">Весь наш персонал имеет необходимую квалификацию и необходимые документы для работы на вашем мероприятии</p>
+                    <ul class="offering__events-list">
+                        <li>Хостес</li>
+                        <li>Повара</li>
+                        <li>Визажисты и стилисты</li>
+                        <li>Официанты</li><li>Охрана</li>
+                        <li>Хэлперы</li>
+                        <li>Модели</li>
+                        <li>Парковщики</li>
+                        <li>Промо персонал</li>
+                        <li>Аниматоры</li>
+                        <li>Переводчики</li>
+                        <li>Декораторы</li>
+                    </ul>
+                </div>
+                <div class="offering__services">
+                    <h2 class="offering__services-title">Комплексные услуги</h2>
+                    <p class="offering__services-subtitle">На всех наших мероприятиях работают профессиональные монтажники декора, флористики и оборудования</p>
+                    <ul class="offering__services-list">
+                        <li>Мебель для мероприятий</li>
+                        <li>Разработка концепции мероприятия</li>
+                        <li>Установка шатров</li>
+                        <li>Флористы</li>
+                        <li>Изготовления декораций</li>
+                        <li>Кейтеринг</li>
+                        <li>Клининг</li>
+                        <li>Разработка дизайна</li>
+                        <li>Полиграфия</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container">
+            <div class="partners__box">
+                <h2 class="partners__title">нам доверяют</h2>
+                <div class="partners__logos">
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-1.webp" alt="partners-logo-1" loading="lazy">
+                    </div>
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-2.webp" alt="partners-logo-2" loading="lazy">
+                    </div>
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-3.webp" alt="partners-logo-3" loading="lazy">
+                    </div>
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-4.webp" alt="partners-logo-4" loading="lazy">
+                    </div>
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-5.webp" alt="partners-logo-5" loading="lazy">
+                    </div>
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-6.webp" alt="partners-logo-6" loading="lazy">
+                    </div>
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-7.webp" alt="partners-logo-7" loading="lazy">
+                    </div>
+                    <div class="partners__logo-item">
+                        <img src="images/partner-logo-8.webp" alt="partners-logo-8" loading="lazy">
+                    </div>
+                </div>
+                <button class="partners__button"><div class="partners__button-module">смотреть больше<img src="images/arrow.webp" alt="arrow" loading="lazy"></div></button>
+            </div>
+        </div>
+    </section>
+<section class="guarantees">
+    <div class="container">
+        <h2 class="guarantees__title">гарантии</h2>
+        <div class="guarantees__grid">
+            <div class="guarantees__item guarantees__item--light">
+                <h3 class="guarantees__item-title">Высокий уровень обслуживания</h3>
+                <p class="guarantees__item-description">Высокий уровень обслуживания, индивидуальное и внимательное отношение к каждому клиенту</p>
+            </div>
+            <div class="guarantees__item guarantees__item--dark">
+                <h3 class="guarantees__item-title">эффективный тайм менеджмент</h3>
+                <p class="guarantees__item-description">Наш тайм менеджмент способствует тому, что все подрядчики и сотрудники будут готовы к мероприятию заранее и будут на площадке в необходимое время</p>
+            </div>
+            <div class="guarantees__item guarantees__item--light">
+                <h3 class="guarantees__item-title">Учитываем все пожелания</h3>
+                <p class="guarantees__item-description">Создавая уникальные и запоминающиеся мероприятия, мы учитываем все пожелания наших клиентов</p>
+            </div>
+            <div class="guarantees__item guarantees__item--dark">
+                <h3 class="guarantees__item-title">Высокий сервис</h3>
+                <p class="guarantees__item-description">Высокий сервис для вип гостей, звёзд и политических деятелей. У нас за спиной 20 лет опыта в этой сфере</p>
+            </div>
+            <div class="guarantees__item guarantees__item--dark">
+                <h3 class="guarantees__item-title">безопасность</h3>
+                <p class="guarantees__item-description">Наш приоритет безопасность для вас и ваших гостей, а также вашего мероприятия</p>
+            </div>
+            <div class="guarantees__item guarantees__item--light">
+                <h3 class="guarantees__item-title">большой опыт</h3>
+                <p class="guarantees__item-description">Каждый наш сотрудник имеет за плечами колоссальный опыт  в вверенной ему сфере деятельности</p>
+            </div>
+            <div class="guarantees__item guarantees__item--dark">
+                <h3 class="guarantees__item-title">Отчетность</h3>
+                <p class="guarantees__item-description">Предоставление отчётности по всем этапам организации мероприятия</p>
+            </div>
+            <div class="guarantees__item guarantees__item--light">
+                <h3 class="guarantees__item-title">высокие стандарты</h3>
+                <p class="guarantees__item-description">Гарантируем подбор и бронирование лучших локаций и услуг, соответствующих самым высоким стандартам</p>
+            </div>
+            <div class="guarantees__item guarantees__item--light">
+                <h3 class="guarantees__item-title">поддержка клиентов</h3>
+                <p class="guarantees__item-description">Поддержка клиентов во время подготовки и в день мероприятия</p>
+            </div>
+            <div class="guarantees__item guarantees__item--dark">
+                <h3 class="guarantees__item-title">конфиденциальность</h3>
+                <p class="guarantees__item-description">Конфиденциальность всех предоставленных данных и информации. Мы подписываем соглашение о неразглашении информации в случае необходимости</p>
+            </div>
+            <div class="guarantees__item guarantees__item--light">
+                <h3 class="guarantees__item-title">разные способы оплаты</h3>
+                <p class="guarantees__item-description">Мы принимаем различные способы оплаты. Наши менеджеры подробно проконсультируют и помогут с проведением оплаты из любой точки мира</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contacts">
+    <div class="container">
+        <h2 class="contacts__title">Свяжитесь с нами</h2>
+        <p class="contacts__subtitle">Мы открыты для ваших сообщений и вопросов каждый день. Свяжитесь с нами любым удобным способом, чтобы получить бесплатную консультацию по вопросам организации мероприятий.</p>
+        <div class="contacts__bottom-content">
+            <div class="contacts__info">
+                <div class="contacts__info-item">
+                    <img src="images/locate.webp" alt="Location icon" class="contacts__info-icon" loading="lazy">
+                    <p><a href="#">170, 1 Bandon-Cherngtalay Rd,Choeng Thale, Phuket 83110</a></p>
+                </div>
+                <div class="contacts__info-item">
+                    <img src="images/mail.webp" alt="Mail icon" class="contacts__info-icon" loading="lazy">
+                    <p><a href="mailto:info@arteventsphuket.com">info@arteventsphuket.com</a></p>
+                </div>
+                <div class="contacts__info-item">
+                    <img src="images/phone.webp" alt="Phone icon" class="contacts__info-icon" loading="lazy">
+                    <p><a href="tel:+66827030303">+66 82 703 03 03</a></p>
+                </div>
+            </div>
+
+            <div class="contacts__links">
+                <a href="#" class="contacts__links-link" aria-label="Facebook">
+                    <img src="images/facebook.webp" alt="Facebook icon" loading="lazy">
+                </a>
+                <a href="#" class="contacts__links-link" aria-label="Instagram">
+                    <img src="images/instagram.webp" alt="Instagram icon" loading="lazy">
+                </a>
+                <a href="#" class="contacts__links-link" aria-label="Telegram">
+                    <img src="images/telegram.webp" alt="Telegram icon" loading="lazy">
+                </a>
+                <a href="#" class="contacts__links-link" aria-label="WhatsApp">
+                    <img src="images/whatsapp.webp" alt="WhatsApp icon" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="form">
+    <div class="container">
+        <h2 class="form__title">Напишите нам</h2>
+        <form class="form__form">
+            <div class="form__group form__group-half">
+                <label for="name" class="form__label">Имя*</label>
+                <input type="text" id="name" name="name" required placeholder="Ваше имя" class="form__input">
+            </div>
+            <div class="form__group form__group-half">
+                <label for="phone" class="form__label">Номер телефона*</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Ваш телефон" class="form__input">
+            </div>
+            <div class="form__group form__group-half">
+                <label for="email" class="form__label">E-mail*</label>
+                <input type="email" id="email" name="email" required placeholder="Ваш E-mail" class="form__input">
+            </div>
+            <div class="form__group form__group-half">
+                <label for="event-type" class="form__label">Тип события*</label>
+                <select id="event-type" name="event-type" required class="form__input form__select">
+                    <option value="">Выберите событие</option>
+                    <option value="wedding">Свадьба</option>
+                    <option value="corporate">Корпоратив</option>
+                    <option value="birthday">День рождения</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+            <div class="form__group form__group-half">
+                <label for="location" class="form__label">Место</label>
+                <input type="text" id="location" name="location" placeholder="Место" class="form__input">
+            </div>
+            <div class="form__group form__group-half">
+                <label for="date" class="form__label">Дата</label>
+                <input type="text" id="date" name="date" placeholder="ДД.ММ.ГГГГ" class="form__input form__date-input">
+            </div>
+            <div class="form__group form__group-full">
+                <label for="message" class="form__label">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Сообщение" class="form__input form__textarea"></textarea>
+            </div>
+
+            <div class="form__checkbox-group">
+                <input type="checkbox" id="consent" name="consent" class="form__checkbox">
+                <label for="consent" class="form__checkbox-label">Отправляя заявку, я соглашаюсь с правилами пользовательского соглашения</label>
+            </div>
+
+            <button type="submit" class="form__button"><div class="form__button-module">отправить</div></button>
+        </form>
+    </div>
+</section>
+<script src="script/reviews-slider.js" defer></script>
+</body>
+</html>

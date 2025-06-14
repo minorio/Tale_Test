@@ -1,0 +1,43 @@
+@import 'fonts';
+@import 'variables';
+@import 'sections/reviews';
+@import 'sections/offering';
+@import 'sections/partners';
+@import 'sections/quarantees';
+@import 'sections/contacts';
+@import 'sections/form';
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container{
+  padding: 0 12px 0 12px;
+  margin: 0 auto;
+}
+
+@media (min-width:768px) {
+  .container{
+    padding: 0 60px 0 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container{
+    padding: 0 100px 0 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container{
+    padding: 0 140px 0 140px;
+  }
+}

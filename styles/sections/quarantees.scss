@@ -1,0 +1,117 @@
+@import '../_variables.scss';
+
+.guarantees {
+  background-color: var(--color-dark-bg);
+  padding: 100px 0;
+
+  &__title {
+    font-family: 'ABChanel Corpo', sans-serif;
+    color: var(--color-white);
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 14px;
+  }
+
+  &__item {
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 3px solid #E6EBF5;
+    width: 100%;
+    &-title {
+      font-family: 'ABChanel Corpo', sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      font-weight: 300;
+      line-height: 150%;
+    }
+
+    &-description {
+      font-size: 18px;
+      line-height: 140%;
+      font-weight: 200;
+    }
+
+    &--dark {
+      background-color: var(--dark-item-bg);
+      color: var(--color-white);
+    }
+
+    &--light {
+      background-color: var(--light-item-bg);
+      color: var(--color-black);
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .guarantees {
+    padding: 100px 0;
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 70px;
+    }
+
+    &__grid {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .guarantees__item {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-title {
+          font-size: 22px;
+        }
+        &-description {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .guarantees {
+    padding: 140px 0;
+
+    &__title {
+      text-align: start;
+      font-size: 55px;
+      margin-bottom: 80px;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      .guarantees__item {
+        flex: initial;
+        max-width: initial;
+        padding: 35px;
+
+        &-title {
+          font-size: 25px;
+        }
+        &-description {
+          font-size: 22px;
+        }
+      }
+      .guarantees__item:nth-child(10) {
+        grid-column: span 2;
+      }
+    }
+  }
+}
